@@ -239,3 +239,23 @@ nav {
   height: 40px;
 }
 /*footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  color: var(--secondary-color);
+}
+.iconEmailFooter {
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.iconTelFooter {
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.iconFBFooter {
+  height: 1.5rem;
+  margin-right: 25px;
+}
