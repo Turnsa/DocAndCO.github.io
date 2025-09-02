@@ -95,6 +95,7 @@ nav {
 }
 .titleDetail {
   font-size: 2rem;
+  margin-bottom: 80px;
 }
 .imagePrincipale{
   width: 100%;
@@ -104,11 +105,22 @@ nav {
 }
 .presentation {
 	background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.contactButton {
+  color: white;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 2rem;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .title {
-    flex-direction: column-reverse;  /* Empile les blocs en colonne */
+    flex-direction: column-reverse;
   }
 }
 
@@ -190,7 +202,40 @@ nav {
 /* Section contact */
 .contact {
   display: flex;
-  align-items: center;
+  margin-bottom: 35px;
 }
-
+.contactDescription {
+  flex: 2;
+  padding: 0 50px;
+}
+.contactDescription h2 {
+  display: flex; 
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.contactDescription p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.contactButtonBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: var(--tertiary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 20px 24px;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 100px;
+  margin-left: 150px;
+  height: fit-content;
+}
+.infoIcon {
+  margin-right: 25px;
+  height: 40px;
+}
 /*footer */
