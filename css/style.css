@@ -202,7 +202,6 @@ nav {
 /* Section contact */
 .contact {
   display: flex;
-  margin-bottom: 35px;
 }
 .contactDescription {
   flex: 2;
@@ -246,6 +245,7 @@ footer {
   padding: 20px 0;
   border-top: 1px solid #ccc;
   color: var(--secondary-color);
+  margin-top: 30px;
 }
 .iconEmailFooter {
   height: 1rem;
@@ -258,4 +258,31 @@ footer {
 .iconFBFooter {
   height: 1.5rem;
   margin-right: 25px;
+}
+
+/***** 
+
+      Pages administratif
+
+*****/
+
+
+/***** 
+
+      Pages CGV & mentions légales
+
+*****/
+.CGVTitle, .mentionsLegalesTitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+.articles {
+  margin-top: 30px;
+  margin-bottom: 7px;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+.confidentialite {
+  margin-top: 50px;
 }
