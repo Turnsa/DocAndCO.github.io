@@ -20,11 +20,11 @@ a:visited {
 }
 
 ul li:nth-child(-n+3):hover {
-  	background-color: var(--tertiary-color);
-  	padding: 10px 20px;
+  background-color: var(--tertiary-color);
+  padding: 10px 20px;
 	border-radius: 5px;
-  	transform: translateY(-4px);
-  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 button{
@@ -233,6 +233,10 @@ nav {
   margin-left: 150px;
   height: fit-content;
 }
+.contactButtonBottom:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 .infoIcon {
   margin-right: 25px;
   height: 40px;
@@ -262,10 +266,82 @@ footer {
 
 /***** 
 
-      Pages administratif
+      Pages prestations
 
 *****/
-
+.mainTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(237, 237, 237);
+  padding-bottom: 30px;
+  border-radius: 0 0 10px 10px;
+}
+.mainTitle h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: var(--secondary-color);
+}
+.mainTitle p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+.banniereAdministratif {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.coreBody {
+  display: flex;
+}
+.prestations {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.listPrestation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.prestationTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+}
+.prestationName {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+.prestationTarif {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 20%;
+  color: var(--secondary-color);
+}
+.listPrestation .contactInfoButton{
+  color: var(--secondary-color);
+  width: 50%;
+}
+.contactInfoButton {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+  padding: 20px 24px;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.contactInfoButton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 /***** 
 
