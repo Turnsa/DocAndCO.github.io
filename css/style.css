@@ -271,7 +271,7 @@ footer {
 *****/
 .mainTitle {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: rgb(237, 237, 237);
   padding-bottom: 30px;
   border-radius: 0 0 10px 10px;
@@ -297,12 +297,11 @@ footer {
 .prestations {
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 .listPrestation {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
 }
 .prestationTitle {
@@ -323,8 +322,10 @@ footer {
   color: var(--secondary-color);
 }
 .listPrestation .contactInfoButton{
+  align-self: center;
   color: var(--secondary-color);
   width: 50%;
+  margin-top: 40px;
 }
 .contactInfoButton {
   display: flex;
