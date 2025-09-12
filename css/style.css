@@ -287,8 +287,9 @@ nav {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
-  padding: 20px 0;
+  padding: 10px 0;
   border-top: 1px solid #ccc;
   color: var(--secondary-color);
   margin-top: 30px;
@@ -305,7 +306,9 @@ footer {
   height: 1.5rem;
   margin-right: 25px;
 }
-
+.imageSAPFooter {
+  height: 50px;
+}
 /***** 
 
       Pages prestations
