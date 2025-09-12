@@ -436,3 +436,192 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+/* --- Responsive mobile --- */
+@media (max-width: 768px) {
+  body {
+    margin: 0 5vw;
+    font-size: 15px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .logo-container {
+    gap: 10px;
+  }
+  .mainLogo {
+    height: 1.5rem;
+  }
+  nav .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 0;
+  }
+  .nav-devis {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  .acceuilTitle {
+    flex-direction: column;
+    height: auto;
+  }
+  .presentation {
+    padding: 20px 5px;
+  }
+  .presentationTitle {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .titleDetail {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  .imagePrincipale {
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  .reduction {
+    padding: 10px 5vw;
+    margin-top: 10px;
+  }
+  .reductionTitle {
+    font-size: 1.1rem;
+    gap: 8px;
+  }
+  .reductionTitle img {
+    height: 30px;
+  }
+  .reductionDetail {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .reductionDetail p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .imageSAP {
+    height: 80px;
+    margin: 10px 0;
+  }
+  .exempleTitle {
+    font-size: 1rem;
+    gap: 8px;
+  }
+  .exempleList {
+    margin-left: 30px;
+    font-size: 1rem;
+  }
+
+  .services {
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 30px;
+  }
+  .vignetteService {
+    margin: 0;
+  }
+  .vignettePictures {
+    height: 180px;
+  }
+  .iconsDetails {
+    margin: 10px;
+    height: 30px;
+  }
+  .vignetteService h2 {
+    font-size: 1.2rem;
+  }
+  .vignetteService p {
+    font-size: 1rem;
+    margin: 0 5px;
+    padding: 0 5px 10px;
+  }
+
+  .info {
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  .info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .infoList {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .infoDetails {
+    margin: 0;
+  }
+  .infoTitle {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .infoTitle h3 {
+    margin-left: 8px;
+  }
+  .infoIcon {
+    margin-right: 8px;
+    height: 25px;
+  }
+  .infoDetails p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contactDescription {
+    padding: 0 5px;
+  }
+  .contactDescription h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .contactDescription p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .contactButtonBottom {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+  .contactButtonBottom .infoIcon {
+    margin-right: 10px;
+    height: 25px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 0.95rem;
+  }
+  .iconEmailFooter,
+  .iconTelFooter {
+    height: 0.9rem;
+    margin-right: 0.3rem;
+  }
+  .iconFBFooter {
+    height: 1.2rem;
+    margin-right: 10px;
+  }
+  .imageSAPFooter {
+    height: 30px;
+  }
+  .footerMentionsLegales,
+  .footerCGV {
+    margin-top: 5px;
+  }
+}
