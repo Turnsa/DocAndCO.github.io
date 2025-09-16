@@ -75,6 +75,10 @@ nav {
 	padding: 10px 20px;
 	border-radius: 5px;
 }
+.burgerMenu {
+  width: 20px;
+  color: white
+}
 /*main */
 .acceuilTitle {
   display: flex;
@@ -170,14 +174,6 @@ nav {
   width: 100%;
   margin: 50px 0px;
 }
-.vignetteService {
-  flex: 1;
-  margin: 0 20px;
-  /* background-color: var(--tertiary-color); */
-  /* border-radius: 5px;
-  overflow: hidden; */
-}
-
 .vignettePictures {
   width: 100%;
   height: 555px;
@@ -413,30 +409,41 @@ footer {
       Pages devis
 
 *****/
+.devisTitle {
+  text-align: center;
+  color: var(--secondary-color);
+  border-top: 3px solid var(--secondary-color);
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   font-family: sans-serif;
 }
-
 input, select, textarea, button {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 button {
   background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
 }
-
 button:hover {
   background-color: #0056b3;
 }
-
+textarea {
+  resize: none;
+}
+.footerForm {
+  font-size: 0.9rem;
+  color: gray;
+  margin-top: 20px;
+}
 /* --- Responsive mobile --- */
 @media (max-width: 768px) {
   body {
@@ -523,13 +530,23 @@ button:hover {
   .services {
     flex-direction: column;
     margin: 20px 0;
-    gap: 30px;
+    gap: 20px;
   }
   .vignetteService {
+    /* height: 200px; */
+    position: relative;
+    padding: 0;
     margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .vignettePictures {
-    height: 180px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .iconsDetails {
     margin: 10px;
@@ -546,7 +563,7 @@ button:hover {
 
   .info {
     margin: 20px 0;
-    padding: 10px 0;
+    padding: 10px 10px;
   }
   .info h2 {
     font-size: 1.2rem;
@@ -602,11 +619,11 @@ button:hover {
   }
 
   footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 10px 0;
-    font-size: 0.95rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
   }
   .iconEmailFooter,
   .iconTelFooter {
@@ -620,8 +637,32 @@ button:hover {
   .imageSAPFooter {
     height: 30px;
   }
+  .footerEmail,
+  .footerTelephone,
+  .footerFacebook,
+  .FooterSAP {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+  }
   .footerMentionsLegales,
   .footerCGV {
-    margin-top: 5px;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .coreBody {
+    flex-direction: column;
+  }
+  .coreBody a {
+    margin-top: 0px;
+    font-size: 1rem;
+  }
+  .listPrestation {
+    margin-bottom: 20px;
+  }
+  .listPrestation .contactInfoButton {
+    width: 100%;
+    margin-top: 20px;
   }
 }

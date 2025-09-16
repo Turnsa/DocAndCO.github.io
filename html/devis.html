@@ -7,16 +7,16 @@
     <title>Administratif</title>
     <link rel="stylesheet" href="../css/style.css"></head>
 <body>
-     <header class="main-header">
+    <header class="main-header">
         <div class="logo-container">
             <img src="../icons/logo.svg" alt="logo de la societe" class="logo">
             <a href="../index.html"><img src="../icons/Doc&Co.svg" alt="Doc&Co" class="mainLogo"></a>
         </div>
         <nav>
             <ul class="nav-menu">
-                <li><a href="./administratif.html">Services administratifs</a></li>
-                <li><a href="./domicile.html">Services à domicile</a></li>
-                <li class="nav-devis"><a href="./devis.html">Demander un devis</a></li>
+                <li class="listNav"><a href="./administratif.html">Services administratifs</a></li>
+                <li class="listNav"><a href="./domicile.html">Services à domicile</a></li>
+                <li class="nav-devis listNav"><a href="./devis.html">Demander un devis</a></li>
             </ul>
         </nav>
     </header>
@@ -27,33 +27,24 @@
         </section>
         <section class="devisForm">
             <form action="/envoyer-message" method="POST" style="max-width: 500px; margin: auto;">
-  <!-- Nom et prénom -->
-  <label for="nom">Nom et prénom :</label>
-  <input type="text" id="nom" name="nom" required >
-
-  <!-- Adresse mail -->
-  <label for="email">Adresse mail :</label>
-  <input type="email" id="email" name="email" required>
-
-  <!-- Objet du message (menu déroulant) -->
-  <label for="objet">Objet du message :</label>
-  <select id="objet" name="objet" required>
-    <option value="">-- Sélectionnez un objet --</option>
-    <option value="demande-devis">Demande de devis</option>
-    <option value="question-service">Question sur un service</option>
-    <option value="reclamation">Réclamation</option>
-    <option value="autre">Autre</option>
-  </select>
-
-  <!-- Message complémentaire -->
-  <label for="message">Message :</label>
-  <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
-
-  <!-- Bouton d'envoi -->
-  <button type="submit">Envoyer</button>
-</form>
-
+                <label for="nom">Nom et prénom :</label>
+                <input type="text" id="nom" name="nom" required >
+                <label for="email">Adresse mail :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="objet">Objet du message :</label>
+                <select id="objet" name="objet" required>
+                    <option value="">-- Sélectionnez un objet --</option>
+                    <option value="demande-devis">Demande de devis</option>
+                    <option value="question-service">Question sur un service</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="10" placeholder="Écrivez votre message ici..." maxlength="500" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
+        <p class="footerForm">Vos données sont traitées en toute confidentialité. Doc&Co vous garantit une réponse en 24H.</p>
     </main>
     <footer>
         <div class="footerEmail">
